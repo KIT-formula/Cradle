@@ -9,7 +9,7 @@ Cradleでタイヤを回転させて解析したいとき、
 必要なパラメータは「回転軸座標」と「回転軸」の２種類。  
 このそれぞれは下図のようなイメージで捉えることができる。
 
-![fig_geometry](https://github.com/KIT-formula/Tools/blob/image/fig_geometry.JPG)
+![fig_geometry](https://github.com/KIT-formula/Cradle/blob/image/fig_geometry.JPG)
 
 ここで、タイヤに舵角がついていた場合、次のように処理すれば良い。  
 
