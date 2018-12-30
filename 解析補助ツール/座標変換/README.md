@@ -11,10 +11,12 @@ Cradleでタイヤを回転させて解析したいとき、
 
 ![fig_geometry](https://github.com/KIT-formula/Cradle/blob/image/fig_geometry.JPG)
 
-ここで、タイヤに舵角がついていた場合、次のように処理すれば良い。  
+ここで、タイヤに舵角がついていた場合は次のように処理すれば良い。  
 
-1. タイヤがまっすぐ（舵角ゼロ）の状態のときのタイヤの中心座標（x,y,z）を計算シートの変換前座標に入力する。
-2. タイヤの傾き角を入力する。
-3. 出力された変換後座標を回転軸座標としてCradleに入力する。
-4. 回転軸は舵角ゼロのときの回転軸を使う。
+1. タイヤの回転中心座標（x,y,z）をCradleに入力する。
+2. タイヤの傾きをゼロとしたときの回転軸（x,y,z）を0 or 1で入力する。
+3. 傾き角（pitch, roll, yaw）を入力する。
+4. 出力された変換後座標を舵角が付いたときの回転軸(x,y,z)としてCradleに入力する。
 
+解析結果
+![fig_cradle](https://github.com/KIT-formula/Cradle-notes/blob/image/fig_cradle.jpg)
